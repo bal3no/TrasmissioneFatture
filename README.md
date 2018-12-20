@@ -1,0 +1,2 @@
+# TrasmissioneFatture
+TrasmissioneFatture wsdltophp
