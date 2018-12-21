@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/TrasmissioneFatture\EnumType;
+namespace SDICoop\TrasmissioneFatture\EnumType;
 
 /**
  * This class stands for erroreInvio_Type EnumType

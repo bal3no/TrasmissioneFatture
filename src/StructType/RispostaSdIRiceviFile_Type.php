@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/TrasmissioneFatture\StructType;
+namespace SDICoop\TrasmissioneFatture\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -57,7 +57,7 @@ class RispostaSdIRiceviFile_Type extends AbstractStructBase
     /**
      * Set IdentificativoSdI value
      * @param int $identificativoSdI
-     * @return \SDICoop/TrasmissioneFatture\StructType\RispostaSdIRiceviFile_Type
+     * @return \SDICoop\TrasmissioneFatture\StructType\RispostaSdIRiceviFile_Type
      */
     public function setIdentificativoSdI($identificativoSdI = null)
     {
@@ -83,7 +83,7 @@ class RispostaSdIRiceviFile_Type extends AbstractStructBase
     /**
      * Set DataOraRicezione value
      * @param string $dataOraRicezione
-     * @return \SDICoop/TrasmissioneFatture\StructType\RispostaSdIRiceviFile_Type
+     * @return \SDICoop\TrasmissioneFatture\StructType\RispostaSdIRiceviFile_Type
      */
     public function setDataOraRicezione($dataOraRicezione = null)
     {
@@ -104,17 +104,17 @@ class RispostaSdIRiceviFile_Type extends AbstractStructBase
     }
     /**
      * Set Errore value
-     * @uses \SDICoop/TrasmissioneFatture\EnumType\ErroreInvio_Type::valueIsValid()
-     * @uses \SDICoop/TrasmissioneFatture\EnumType\ErroreInvio_Type::getValidValues()
+     * @uses \SDICoop\TrasmissioneFatture\EnumType\ErroreInvio_Type::valueIsValid()
+     * @uses \SDICoop\TrasmissioneFatture\EnumType\ErroreInvio_Type::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $errore
-     * @return \SDICoop/TrasmissioneFatture\StructType\RispostaSdIRiceviFile_Type
+     * @return \SDICoop\TrasmissioneFatture\StructType\RispostaSdIRiceviFile_Type
      */
     public function setErrore($errore = null)
     {
         // validation for constraint: enumeration
-        if (!\SDICoop/TrasmissioneFatture\EnumType\ErroreInvio_Type::valueIsValid($errore)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $errore, implode(', ', \SDICoop/TrasmissioneFatture\EnumType\ErroreInvio_Type::getValidValues())), __LINE__);
+        if (!\SDICoop\TrasmissioneFatture\EnumType\ErroreInvio_Type::valueIsValid($errore)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $errore, implode(', ', \SDICoop\TrasmissioneFatture\EnumType\ErroreInvio_Type::getValidValues())), __LINE__);
         }
         $this->Errore = $errore;
         return $this;
@@ -125,7 +125,7 @@ class RispostaSdIRiceviFile_Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \SDICoop/TrasmissioneFatture\StructType\RispostaSdIRiceviFile_Type
+     * @return \SDICoop\TrasmissioneFatture\StructType\RispostaSdIRiceviFile_Type
      */
     public static function __set_state(array $array)
     {

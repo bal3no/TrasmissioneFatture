@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/TrasmissioneFatture;
+namespace SDICoop\TrasmissioneFatture;
 
 /**
  * Class which returns the class map definition
@@ -16,9 +16,9 @@ class ClassMap
     final public static function get()
     {
         return array(
-            'fileSdIBase_Type' => '\\SDICoop/TrasmissioneFatture\\StructType\\FileSdIBase_Type',
-            'fileSdI_Type' => '\\SDICoop/TrasmissioneFatture\\StructType\\FileSdI_Type',
-            'rispostaSdIRiceviFile_Type' => '\\SDICoop/TrasmissioneFatture\\StructType\\RispostaSdIRiceviFile_Type',
+            'fileSdIBase_Type' => '\\SDICoop\\TrasmissioneFatture\\StructType\\FileSdIBase_Type',
+            'fileSdI_Type' => '\\SDICoop\\TrasmissioneFatture\\StructType\\FileSdI_Type',
+            'rispostaSdIRiceviFile_Type' => '\\SDICoop\\TrasmissioneFatture\\StructType\\RispostaSdIRiceviFile_Type',
         );
     }
 }

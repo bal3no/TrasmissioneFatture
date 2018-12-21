@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/TrasmissioneFatture\ServiceType;
+namespace SDICoop\TrasmissioneFatture\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Ricevuta extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $ricevuta
+     * @param \SDICoop\TrasmissioneFatture\StructType\FileSdI_Type $ricevuta
      * @return void|bool
      */
-    public function RicevutaConsegna(\SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $ricevuta)
+    public function RicevutaConsegna(\SDICoop\TrasmissioneFatture\StructType\FileSdI_Type $ricevuta)
     {
         try {
             $this->setResult($this->getSoapClient()->RicevutaConsegna($ricevuta));
