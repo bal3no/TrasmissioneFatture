@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace SDICoop/TrasmissioneFatture\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Notifica extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\FileSdI_Type $mancataConsegna
+     * @param \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $mancataConsegna
      * @return void|bool
      */
-    public function NotificaMancataConsegna(\StructType\FileSdI_Type $mancataConsegna)
+    public function NotificaMancataConsegna(\SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $mancataConsegna)
     {
         try {
             $this->setResult($this->getSoapClient()->NotificaMancataConsegna($mancataConsegna));
@@ -35,10 +35,10 @@ class Notifica extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\FileSdI_Type $scarto
+     * @param \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $scarto
      * @return void|bool
      */
-    public function NotificaScarto(\StructType\FileSdI_Type $scarto)
+    public function NotificaScarto(\SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $scarto)
     {
         try {
             $this->setResult($this->getSoapClient()->NotificaScarto($scarto));
@@ -54,10 +54,10 @@ class Notifica extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\FileSdI_Type $esito
+     * @param \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $esito
      * @return void|bool
      */
-    public function NotificaEsito(\StructType\FileSdI_Type $esito)
+    public function NotificaEsito(\SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $esito)
     {
         try {
             $this->setResult($this->getSoapClient()->NotificaEsito($esito));
@@ -73,10 +73,10 @@ class Notifica extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\FileSdI_Type $decorrenzaTermini
+     * @param \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $decorrenzaTermini
      * @return void|bool
      */
-    public function NotificaDecorrenzaTermini(\StructType\FileSdI_Type $decorrenzaTermini)
+    public function NotificaDecorrenzaTermini(\SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $decorrenzaTermini)
     {
         try {
             $this->setResult($this->getSoapClient()->NotificaDecorrenzaTermini($decorrenzaTermini));

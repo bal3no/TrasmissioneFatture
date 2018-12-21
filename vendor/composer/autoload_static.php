@@ -4,12 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0a303d7b2e57b208c96d279f4f4f4212
+class ComposerStaticInit76cce3f39a2b7494f51c41318f9d5041
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
             'WsdlToPhp\\PackageBase\\' => 22,
+        ),
+        'S' => 
+        array (
+            'SDICoop/TrasmissioneFatture\\' => 28,
         ),
     );
 
@@ -18,21 +22,13 @@ class ComposerStaticInit0a303d7b2e57b208c96d279f4f4f4212
         array (
             0 => __DIR__ . '/..' . '/wsdltophp/packagebase/src',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/../..' . '/src',
+        'SDICoop/TrasmissioneFatture\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
     );
 
     public static $classMap = array (
-        'ClassMap' => __DIR__ . '/../..' . '/src/ClassMap.php',
-        'EnumType\\ErroreInvio_Type' => __DIR__ . '/../..' . '/src/EnumType/ErroreInvio_Type.php',
-        'ServiceType\\Attestazione' => __DIR__ . '/../..' . '/src/ServiceType/Attestazione.php',
-        'ServiceType\\Notifica' => __DIR__ . '/../..' . '/src/ServiceType/Notifica.php',
-        'ServiceType\\Ricevuta' => __DIR__ . '/../..' . '/src/ServiceType/Ricevuta.php',
-        'StructType\\FileSdIBase_Type' => __DIR__ . '/../..' . '/src/StructType/FileSdIBase_Type.php',
-        'StructType\\FileSdI_Type' => __DIR__ . '/../..' . '/src/StructType/FileSdI_Type.php',
-        'StructType\\RispostaSdIRiceviFile_Type' => __DIR__ . '/../..' . '/src/StructType/RispostaSdIRiceviFile_Type.php',
         'WsdlToPhp\\PackageBase\\AbstractSoapClientBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractSoapClientBase.php',
         'WsdlToPhp\\PackageBase\\AbstractStructArrayBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructArrayBase.php',
         'WsdlToPhp\\PackageBase\\AbstractStructBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructBase.php',
@@ -45,10 +41,9 @@ class ComposerStaticInit0a303d7b2e57b208c96d279f4f4f4212
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0a303d7b2e57b208c96d279f4f4f4212::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0a303d7b2e57b208c96d279f4f4f4212::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit0a303d7b2e57b208c96d279f4f4f4212::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInit0a303d7b2e57b208c96d279f4f4f4212::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit76cce3f39a2b7494f51c41318f9d5041::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit76cce3f39a2b7494f51c41318f9d5041::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit76cce3f39a2b7494f51c41318f9d5041::$classMap;
 
         }, null, ClassLoader::class);
     }

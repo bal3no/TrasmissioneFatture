@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'TrasmissioneFatture_v1.1.wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \SDICoop/TrasmissioneFatture\ClassMap::get(),
 );
 /**
  * Samples for Ricevuta ServiceType
  */
-$ricevuta = new \ServiceType\Ricevuta($options);
+$ricevuta = new \SDICoop/TrasmissioneFatture\ServiceType\Ricevuta($options);
 /**
  * Sample call for RicevutaConsegna operation/method
  */
-if ($ricevuta->RicevutaConsegna(new \StructType\FileSdI_Type()) !== false) {
+if ($ricevuta->RicevutaConsegna(new \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type()) !== false) {
     print_r($ricevuta->getResult());
 } else {
     print_r($ricevuta->getLastError());
@@ -36,11 +36,11 @@ if ($ricevuta->RicevutaConsegna(new \StructType\FileSdI_Type()) !== false) {
 /**
  * Samples for Notifica ServiceType
  */
-$notifica = new \ServiceType\Notifica($options);
+$notifica = new \SDICoop/TrasmissioneFatture\ServiceType\Notifica($options);
 /**
  * Sample call for NotificaMancataConsegna operation/method
  */
-if ($notifica->NotificaMancataConsegna(new \StructType\FileSdI_Type()) !== false) {
+if ($notifica->NotificaMancataConsegna(new \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type()) !== false) {
     print_r($notifica->getResult());
 } else {
     print_r($notifica->getLastError());
@@ -48,7 +48,7 @@ if ($notifica->NotificaMancataConsegna(new \StructType\FileSdI_Type()) !== false
 /**
  * Sample call for NotificaScarto operation/method
  */
-if ($notifica->NotificaScarto(new \StructType\FileSdI_Type()) !== false) {
+if ($notifica->NotificaScarto(new \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type()) !== false) {
     print_r($notifica->getResult());
 } else {
     print_r($notifica->getLastError());
@@ -56,7 +56,7 @@ if ($notifica->NotificaScarto(new \StructType\FileSdI_Type()) !== false) {
 /**
  * Sample call for NotificaEsito operation/method
  */
-if ($notifica->NotificaEsito(new \StructType\FileSdI_Type()) !== false) {
+if ($notifica->NotificaEsito(new \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type()) !== false) {
     print_r($notifica->getResult());
 } else {
     print_r($notifica->getLastError());
@@ -64,7 +64,7 @@ if ($notifica->NotificaEsito(new \StructType\FileSdI_Type()) !== false) {
 /**
  * Sample call for NotificaDecorrenzaTermini operation/method
  */
-if ($notifica->NotificaDecorrenzaTermini(new \StructType\FileSdI_Type()) !== false) {
+if ($notifica->NotificaDecorrenzaTermini(new \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type()) !== false) {
     print_r($notifica->getResult());
 } else {
     print_r($notifica->getLastError());
@@ -72,11 +72,11 @@ if ($notifica->NotificaDecorrenzaTermini(new \StructType\FileSdI_Type()) !== fal
 /**
  * Samples for Attestazione ServiceType
  */
-$attestazione = new \ServiceType\Attestazione($options);
+$attestazione = new \SDICoop/TrasmissioneFatture\ServiceType\Attestazione($options);
 /**
  * Sample call for AttestazioneTrasmissioneFattura operation/method
  */
-if ($attestazione->AttestazioneTrasmissioneFattura(new \StructType\FileSdI_Type()) !== false) {
+if ($attestazione->AttestazioneTrasmissioneFattura(new \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type()) !== false) {
     print_r($attestazione->getResult());
 } else {
     print_r($attestazione->getLastError());

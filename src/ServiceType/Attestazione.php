@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace SDICoop/TrasmissioneFatture\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Attestazione extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\FileSdI_Type $attestazioneTrasmissioneFattura
+     * @param \SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $attestazioneTrasmissioneFattura
      * @return void|bool
      */
-    public function AttestazioneTrasmissioneFattura(\StructType\FileSdI_Type $attestazioneTrasmissioneFattura)
+    public function AttestazioneTrasmissioneFattura(\SDICoop/TrasmissioneFatture\StructType\FileSdI_Type $attestazioneTrasmissioneFattura)
     {
         try {
             $this->setResult($this->getSoapClient()->AttestazioneTrasmissioneFattura($attestazioneTrasmissioneFattura));
